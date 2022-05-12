@@ -1,19 +1,22 @@
+body {
+  font-family: "Fredoka", sans-serif;
+}
 h1 {
   color: black;
-  font-family: "Fredoka", sans-serif;
   text-align: center;
   margin: 0 auto;
   display: block;
+  line-height: 28px;
+  font-size: 24px;
 }
 small {
   text-align: center;
   margin: 0 auto;
   display: block;
-  font-family: "Fredoka", sans-serif;
 }
 h2 {
   font-size: 45px;
-  font-family: "Fredoka", sans-serif;
+
   text-align: center;
   margin: 0 auto;
   display: block;
@@ -78,4 +81,9 @@ button:hover {
 }
 .icons {
   text-align: center;
+}
+.units {
+  position: relative;
+  font-size: 13px;
+  top: -22px;
 }
