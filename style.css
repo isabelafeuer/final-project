@@ -1,0 +1,81 @@
+h1 {
+  color: black;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+small {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-family: "Fredoka", sans-serif;
+}
+h2 {
+  font-size: 45px;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+input {
+  border-radius: 20px;
+  border: solid;
+  text-align: center;
+}
+.container {
+  margin: 100px auto;
+  display: block;
+  padding: 15px 50px;
+  max-width: 420px;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  border-radius: 30px;
+}
+::placeholder {
+  background-color: transparent;
+  color: black;
+  font-size: 1 em;
+  text-align: center;
+}
+
+button {
+  max-width: 35px;
+  position: relative;
+  bottom: 2px;
+  border-radius: 20px;
+  transition: all 2ms ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  background-color: opacity;
+}
+
+.sun {
+  max-width: 24%;
+}
+
+.date {
+  font-size: 12px;
+}
+.temp {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 20px 0 25px;
+}
+.weekday {
+  border: 1px solid none;
+
+  text-align: center;
+}
+.wheatericons {
+  max-width: 110%;
+}
+.temperature {
+  color: black;
+  text-align: center;
+  font-size: 10px;
+}
+.icons {
+  text-align: center;
+}
