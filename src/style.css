@@ -72,3 +72,11 @@ li:first-letter {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+.container {
+  margin: 100px auto;
+  display: block;
+  padding: 15px 50px;
+  max-width: 420px;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  border-radius: 30px;
+}
