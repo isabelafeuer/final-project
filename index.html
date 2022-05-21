@@ -27,72 +27,60 @@
 
     <title>Isabela's project</title>
   </head>
-  <body>
-    <div class="container">
-      <br />
-      <br />
-      <br />
-      <h1 id="city">Tel Aviv</h1>
-      <small class="col-12" id="current-date">Tuesday 17:31</small>
-
-      <h2 id="current-temperature">
-        <strong>17</strong><span class="units">°C | <a href=#>°F</a></span>
-      </h2>
-      <small>Mostly Clear</small>
-      <br />
-      <div class="row">
-        <div class="col-7">Real Feel:</div>
-        <div class="col-7 temp">16°</div>
-      </div>
-      <br />
-      <form id="search-form">
-        <div class="row">
-          <div class="col-9">
-            <input
-              type="text"
-              id="city-input"
-              class="form-control"
-              placeholder="Enter city"
-              autocomplete="off"
-            />
+<div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
           </div>
-          <div class="col-3" id="location">
-            <input
-              class="btn btn-primary search-button"
-              type="submit"
-              value="Search"
-            />
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </form>
-      <br />
-
-      <br />
-      <br />
-      <div class="row weekday">
-        <div class="col">Mon</div>
-        <div class="col">Tue</div>
-        <div class="col">Wed</div>
-        <div class="col">Thu</div>
-        <div class="col">Fri</div>
-      </div>
-      <div class="row icons">
-        <div class="col"><i class="fa-solid fa-cloud"></i></div>
-        <div class="col"><i class="fa-solid fa-cloud-rain"></i></div>
-        <div class="col"><i class="fa-solid fa-cloud-rain"></i></div>
-        <div class="col"><i class="fa-solid fa-cloud-rain"></i></div>
-        <div class="col"><i class="fa-solid fa-cloud-sun"></i></div>
-      </div>
-
-      <div class="row temperature">
-        <div class="col">13°/21°</div>
-        <div class="col">11°/21°</div>
-        <div class="col">13°/19°</div>
-        <div class="col">13°/18°</div>
-        <div class="col">10°/14°</div>
-      </div>
-    </div>
-    <script src=src/app.js></script>
+        <small>
+   
     <a href="https://github.com/isabelafeuer/final-project" target="_blank">Open-source code</a> by Isabela Feuer
-  </body>
+   <script src=src/app.js></script>
+</body>
 </html>
